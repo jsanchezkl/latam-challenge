@@ -4,15 +4,7 @@ from typing import List, Tuple
 from collections import Counter
 
 def q2_time(file_path: str) -> List[Tuple[str, int]]:
-    """
-    Lee un archivo JSON de tweets y devuelve una lista de los 10 emojis más usados con su respectivo conteo.
     
-    Args:
-        file_path (str): Ruta al archivo JSON de tweets.
-    
-    Returns:
-        List[Tuple[str, int]]: Lista de tuplas donde cada tupla contiene un emoji (str) y su conteo (int).
-    """
     # Expresión regular para extraer emojis
     emoji_pattern = re.compile(
         "[" 
